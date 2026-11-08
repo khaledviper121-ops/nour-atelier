@@ -1,56 +1,437 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fbf9f4">
-  <meta name="description" content="Nour Atelier - فساتين زفاف وسواريه وخطوبة">
-  <title>Nour Atelier | أتيليه نور</title>
-  <style>
-    :root{--gold:#b18a45;--gold-dark:#8d6a2f;--ink:#302b24;--muted:#827b70;--paper:#fbf9f4;--line:#e9e0d1}
-    *{box-sizing:border-box}
-    body{margin:0;min-height:100vh;background:radial-gradient(ellipse at top,#fff 0%,var(--paper) 62%);color:var(--ink);font-family:Tahoma,Arial,sans-serif;display:flex;justify-content:center;padding:28px 16px}
-    .wrap{width:100%;max-width:440px}
-    .card{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:26px;padding:30px 22px 22px;box-shadow:0 16px 50px rgba(70,50,20,.07);text-align:center}
-    .mark{width:78px;height:78px;border:1px solid var(--gold);border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;color:var(--gold);font-family:Georgia,serif;font-size:29px;letter-spacing:1px}
-    h1{font-family:Georgia,serif;font-weight:500;letter-spacing:1px;color:var(--gold-dark);font-size:31px;margin:4px 0}
-    .arabic{font-size:21px;margin:3px 0 9px;font-weight:600}
-    .tag{font-size:13px;color:var(--muted);margin:0 0 24px}
-    .links{display:grid;gap:11px}
-    .link{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:#fff;font-size:15px;transition:.18s}
-    .link:hover{border-color:var(--gold);transform:translateY(-1px);box-shadow:0 5px 18px rgba(177,138,69,.10)}
-    .link.primary{background:linear-gradient(135deg,#c5a56d,#a77e3b);color:white;border-color:transparent;font-weight:700}
-    .ico{width:21px;height:21px;display:inline-grid;place-items:center;color:var(--gold-dark);font-size:16px}
-    .primary .ico{color:white}
-    .address{margin:22px 0 0;padding:17px 13px 4px;border-top:1px solid var(--line);line-height:1.9;font-size:13px;color:var(--muted)}
-    .address strong{display:block;color:var(--gold-dark);font-size:15px;margin-bottom:3px}
-    .footer{font-size:11px;color:#a39a8b;margin-top:20px}
-    @media(prefers-reduced-motion:reduce){.link{transition:none}}
-  </style>
-</head>
-<body>
-  <main class="wrap">
-    <section class="card">
-      <div class="mark" aria-hidden="true">N</div>
-      <h1>Nour Atelier</h1>
-      <div class="arabic">أتيليه نور</div>
-      <p class="tag">يسعدنا تواصلكم معنا</p>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#f8f5ee">
+        <meta name="description" content="Nour Atelier - فساتين زفاف وسواريه وخطوبة">
+        <title>Nour Atelier | أتيليه نور</title>
+        <style>
+            :root {
+                --gold: #b18a45;
+                --deep: #80602e;
+                --ink: #30291f;
+                --muted: #82796c;
+                --paper: #f8f5ee;
+                --line: #e9dfce
+            }
 
-      <nav class="links" aria-label="روابط التواصل">
-        <a class="link primary" href="https://wa.me/201020473388" target="_blank" rel="noopener"><span class="ico">✆</span> تواصلي معنا على واتساب</a>
-        <a class="link" href="https://www.facebook.com/share/1BAbC74X5Q/?mibextid=wwXIfr" target="_blank" rel="noopener"><span class="ico">f</span> Facebook</a>
-        <a class="link" href="https://www.instagram.com/nour_atelier4/" target="_blank" rel="noopener"><span class="ico">◎</span> Instagram</a>
-        <a class="link" href="https://www.tiktok.com/@norhanahmed49" target="_blank" rel="noopener"><span class="ico">♪</span> TikTok</a>
-        <a class="link" href="https://maps.google.com/?q=30.010279,31.152134" target="_blank" rel="noopener"><span class="ico">⌖</span> موقعنا على الخريطة</a>
-      </nav>
+            * {
+                box-sizing: border-box
+            }
 
-      <div class="address">
-        <strong>زورونا في أتيليه نور</strong>
-        الدور الأول – مول المدينة<br>
-        شارع المنشية – الطوابق – فيصل – الجيزة
-      </div>
-      <div class="footer">NOUR ATELIER · ELEGANCE IN EVERY DETAIL</div>
-    </section>
-  </main>
-</body>
+            body {
+                margin: 0;
+                min-height: 100vh;
+                padding: 30px 16px 38px;
+                color: var(--ink);
+                background: radial-gradient(ellipse at 50% -10%,#fff 0%,#faf7f0 48%,#f2ede3 100%);
+                font-family: Tahoma,Arial,sans-serif;
+                display: flex;
+                justify-content: center
+            }
+
+            .wrap {
+                width: 100%;
+                max-width: 470px
+            }
+
+            .card {
+                position: relative;
+                overflow: hidden;
+                text-align: center;
+                padding: 34px 23px 24px;
+                background: #fffefa;
+                border: 1px solid var(--line);
+                border-radius: 30px;
+                box-shadow: 0 24px 70px rgba(74,55,24,.11)
+            }
+
+            .card:before,.card:after {
+                content: "";
+                position: absolute;
+                width: 170px;
+                height: 170px;
+                border: 1px solid rgba(177,138,69,.16);
+                border-radius: 50%;
+                pointer-events: none
+            }
+
+            .card:before {
+                top: -112px;
+                right: -95px
+            }
+
+            .card:after {
+                bottom: -125px;
+                left: -110px
+            }
+
+            .brand {
+                position: relative;
+                z-index: 1
+            }
+
+            .ornament {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 11px;
+                margin: 0 auto 13px;
+                color: var(--gold)
+            }
+
+            .ornament:before,.ornament:after {
+                content: "";
+                height: 1px;
+                width: 47px;
+                background: linear-gradient(90deg,transparent,#d9c49b)
+            }
+
+            .ornament:after {
+                transform: scaleX(-1)
+            }
+
+            .monogram {
+                width: 76px;
+                height: 76px;
+                margin: 0 auto 13px;
+                border: 1px solid var(--gold);
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                color: var(--deep);
+                font: italic 36px Georgia,serif;
+                box-shadow: inset 0 0 0 5px rgba(177,138,69,.07)
+            }
+
+            h1 {
+                margin: 0;
+                color: var(--deep);
+                font: 500 32px Georgia,serif;
+                letter-spacing: 1.2px
+            }
+
+            .arabic {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 5px 0 7px;
+                color: #4a3b28
+            }
+
+            .tag {
+                font-size: 13px;
+                color: var(--muted);
+                margin: 0 0 23px
+            }
+
+            .links {
+                display: grid;
+                gap: 10px
+            }
+
+            .link {
+                min-height: 52px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 11px;
+                padding: 13px 15px;
+                text-decoration: none;
+                color: var(--ink);
+                background: #fff;
+                border: 1px solid var(--line);
+                border-radius: 15px;
+                font-size: 14px;
+                font-weight: 600;
+                transition: transform .18s,border-color .18s,box-shadow .18s
+            }
+
+            .link:hover {
+                transform: translateY(-2px);
+                border-color: #d9c49b;
+                box-shadow: 0 8px 20px rgba(177,138,69,.10)
+            }
+
+            .link.primary {
+                color: white;
+                background: linear-gradient(125deg,#c8aa73,#987039);
+                border-color: transparent
+            }
+
+            .ico {
+                width: 25px;
+                height: 25px;
+                display: grid;
+                place-items: center;
+                flex: 0 0 25px;
+                border-radius: 50%;
+                background: #f5efe3;
+                color: var(--deep);
+                font-size: 14px;
+                font-weight: 700
+            }
+
+            .primary .ico {
+                background: rgba(255,255,255,.18);
+                color: #fff
+            }
+
+            .section {
+                margin-top: 21px;
+                text-align: right
+            }
+
+            .section-title {
+                display: flex;
+                align-items: center;
+                gap: 9px;
+                margin: 0 2px 10px;
+                color: var(--deep);
+                font-size: 14px;
+                font-weight: 700
+            }
+
+            .section-title:after {
+                content: "";
+                height: 1px;
+                background: var(--line);
+                flex: 1
+            }
+
+            .wallet {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                padding: 13px 14px;
+                background: #fff;
+                border: 1px solid var(--line);
+                border-radius: 14px;
+                margin-top: 9px;
+                text-align: right
+            }
+
+            .wallet-info {
+                min-width: 0
+            }
+
+            .wallet-name {
+                font-size: 13px;
+                font-weight: 700;
+                color: #51432f;
+                margin-bottom: 5px
+            }
+
+            .wallet-number {
+                font-size: 15px;
+                direction: ltr;
+                text-align: right;
+                letter-spacing: .4px;
+                color: var(--ink);
+                font-weight: 700
+            }
+
+            .wallet-owner {
+                font-size: 11px;
+                color: var(--muted);
+                margin-top: 4px
+            }
+
+            .copy {
+                flex: 0 0 auto;
+                border: 1px solid var(--line);
+                background: #faf7f0;
+                color: var(--deep);
+                border-radius: 10px;
+                padding: 9px 11px;
+                font: 600 11px Tahoma,Arial,sans-serif;
+                cursor: pointer
+            }
+
+            .copy:hover {
+                border-color: var(--gold)
+            }
+
+            .ipa {
+                margin-top: 9px;
+                padding: 12px 14px;
+                border: 1px dashed #d9c49b;
+                border-radius: 13px;
+                background: #fcf9f1;
+                color: var(--deep);
+                font-size: 13px;
+                font-weight: 700;
+                direction: ltr;
+                letter-spacing: .2px
+            }
+
+            .ipa-label {
+                font-size: 11px;
+                color: var(--muted);
+                font-weight: 400;
+                direction: rtl;
+                margin-bottom: 5px
+            }
+
+            .address {
+                margin: 23px 0 0;
+                padding: 17px 10px 2px;
+                border-top: 1px solid var(--line);
+                line-height: 1.9;
+                font-size: 13px;
+                color: var(--muted)
+            }
+
+            .address strong {
+                display: block;
+                color: var(--deep);
+                font-size: 15px;
+                margin-bottom: 4px
+            }
+
+            .footer {
+                font: 10px Georgia,serif;
+                letter-spacing: 1.4px;
+                color: #aa9b80;
+                margin-top: 20px
+            }
+
+            #toast {
+                position: fixed;
+                bottom: 20px;
+                left: 50%;
+                transform: translate(-50%,15px);
+                opacity: 0;
+                pointer-events: none;
+                background: #30291f;
+                color: #fff;
+                padding: 10px 16px;
+                border-radius: 30px;
+                font-size: 12px;
+                transition: .2s;
+                z-index: 5
+            }
+
+            #toast.show {
+                opacity: 1;
+                transform: translate(-50%,0)
+            }
+
+            @media(max-width: 360px) {
+                .card {
+                    padding:28px 16px 21px
+                }
+
+                h1 {
+                    font-size: 29px
+                }
+
+                .wallet-number {
+                    font-size: 14px
+                }
+            }
+
+            @media(prefers-reduced-motion:reduce) {
+                * {
+                    scroll-behavior: auto;
+                    transition: none!important
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main class="wrap">
+            <section class="card">
+                <header class="brand">
+                    <div class="ornament" aria-hidden="true">✧</div>
+                    <div class="monogram" aria-hidden="true">N</div>
+                    <h1>Nour Atelier</h1>
+                    <div class="arabic">أتيليه نور</div>
+                    <p class="tag">أناقتك تبدأ من هنا · يسعدنا تواصلكم معنا</p>
+                </header>
+                <nav class="links" aria-label="روابط التواصل">
+                    <a class="link primary" href="https://wa.me/201020473388" target="_blank" rel="noopener">
+                        <span class="ico">✆</span>
+                        تواصلي معنا على واتساب
+                    </a>
+                    <a class="link" href="tel:01020473388">
+                        <span class="ico">☎</span>
+                        اتصال مباشر · 01020473388
+                    </a>
+                    <a class="link" href="https://www.facebook.com/share/1BAbC74X5Q/?mibextid=wwXIfr" target="_blank" rel="noopener">
+                        <span class="ico">f</span>
+                        Facebook
+                    </a>
+                    <a class="link" href="https://www.instagram.com/nour_atelier4/" target="_blank" rel="noopener">
+                        <span class="ico">◎</span>
+                        Instagram
+                    </a>
+                    <a class="link" href="https://www.tiktok.com/@norhanahmed49" target="_blank" rel="noopener">
+                        <span class="ico">♪</span>
+                        TikTok
+                    </a>
+                    <a class="link" href="https://maps.google.com/?q=30.010279,31.152134" target="_blank" rel="noopener">
+                        <span class="ico">⌖</span>
+                        موقعنا على الخريطة
+                    </a>
+                </nav>
+                <section class="section" aria-labelledby="payments">
+                    <h2 class="section-title" id="payments">طرق الدفع الإلكتروني</h2>
+                    <a class="link" href="https://ipn.eg/S/aibkhaled/instapay/3KpywC" target="_blank" rel="noopener">
+                        <span class="ico">↗</span>
+                        الدفع عن طريق InstaPay
+                    </a>
+                    <div class="ipa">
+                        <div class="ipa-label">عنوان الدفع InstaPay · IPA</div>
+                        aibkhaled@instapay
+                    </div>
+                    <div class="wallet">
+                        <div class="wallet-info">
+                            <div class="wallet-name">محفظة اتصالات كاش</div>
+                            <div class="wallet-number">01111136901</div>
+                            <div class="wallet-owner">خالد عماد</div>
+                        </div>
+                        <button class="copy" type="button" data-copy="01111136901">نسخ الرقم</button>
+                    </div>
+                    <div class="wallet">
+                        <div class="wallet-info">
+                            <div class="wallet-name">محفظة اتصالات كاش</div>
+                            <div class="wallet-number">01116445253</div>
+                            <div class="wallet-owner">نورهان احمد</div>
+                        </div>
+                        <button class="copy" type="button" data-copy="01116445253">نسخ الرقم</button>
+                    </div>
+                </section>
+                <div class="address">
+                    <strong>زورونا في أتيليه نور</strong>
+                    الدور الأول – مول المدينة<br>شارع المنشية – الطوابق – فيصل – الجيزة
+                </div>
+                <div class="footer">NOUR ATELIER · ELEGANCE IN EVERY DETAIL</div>
+            </section>
+        </main>
+        <div id="toast" role="status" aria-live="polite">تم نسخ الرقم</div>
+        <script>
+            const toast = document.getElementById('toast');
+            document.querySelectorAll('[data-copy]').forEach(button => button.addEventListener('click', async () => {
+                const value = button.dataset.copy;
+                try {
+                    await navigator.clipboard.writeText(value)
+                } catch (error) {
+                    const field = document.createElement('textarea');
+                    field.value = value;
+                    field.style.position = 'fixed';
+                    field.style.opacity = '0';
+                    document.body.appendChild(field);
+                    field.select();
+                    document.execCommand('copy');
+                    field.remove()
+                }
+                toast.textContent = 'تم نسخ الرقم: ' + value;
+                toast.classList.add('show');
+                window.setTimeout( () => toast.classList.remove('show'), 1800)
+            }
+            ));
+        </script>
+    </body>
 </html>
